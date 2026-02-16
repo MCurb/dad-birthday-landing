@@ -220,7 +220,7 @@ p {
 
 .down-arrow {
   position: absolute;
-  bottom: 1px;
+  bottom: 20px;
   left: 50%;
   transform: translate(-50%, 10%);
   font-size: 68px;
