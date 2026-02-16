@@ -17,9 +17,14 @@ function updateImageLoading() {
       idx === (currentIndex - 1 + images.length) % images.length
     ) {
       img.loading = 'eager';
-      if (!img.src)
+      // If src is not set, set it from data-src
+      if (!img.src) {
         img.src = img.dataset.src || img.getAttribute('data-src') || img.src;
-      preloadImage(img.src);
+      }
+      // Only preload if not already loaded
+      if (img.src && !img.complete) {
+        preloadImage(img.src);
+      }
     } else {
       img.loading = 'lazy';
     }
