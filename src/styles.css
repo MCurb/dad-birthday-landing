@@ -108,6 +108,26 @@ body {
   animation: moveGradient 8s ease infinite;
 }
 
+@media (max-width: 600px) {
+  .section-animated {
+    background: linear-gradient(100deg, #232323, #292929, #232323);
+    background-size: 120% 120%;
+    animation-duration: 12s;
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .section-title {
   font-size: clamp(1.5rem, 7.5vw, 2.5rem);
   letter-spacing: 0.2em;
@@ -559,12 +579,11 @@ p {
 }
 
 .audio-card.is-playing {
-background: linear-gradient(
+  background: linear-gradient(
     to right,
-    rgba(200,155,94,0.06),
-    rgba(0,0,0,0.9)
-);
-
+    rgba(200, 155, 94, 0.06),
+    rgba(0, 0, 0, 0.9)
+  );
 }
 
 .audio-avatar {
@@ -574,7 +593,6 @@ background: linear-gradient(
   object-fit: cover;
   flex-shrink: 0;
 }
-
 
 .audio-play-btn {
   border-radius: 50%;
