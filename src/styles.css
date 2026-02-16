@@ -223,7 +223,7 @@ p {
   bottom: 1px;
   left: 50%;
   transform: translate(-50%, 10%);
-  font-size: 80px;
+  font-size: 68px;
   color: var(--text-muted);
   z-index: 2;
 
