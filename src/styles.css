@@ -587,9 +587,9 @@ p {
 }
 
 .audio-avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -635,6 +635,6 @@ p {
 .audio-current-time,
 .audio-duration,
 .slash {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
 }
